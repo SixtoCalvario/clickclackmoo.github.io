@@ -1,5 +1,12 @@
 body{
-    background-image: url('/workspaces/clickclackmoo.github.io/images/farmStart.gif');
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/044/822/468/original/sofia-ritter-farm-cottage-with-chickens.gif?1641246286");
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#title{
+    text-align: center;
+
 }
