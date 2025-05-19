@@ -1,3 +1,5 @@
 body{
     background-image: url('/workspaces/clickclackmoo.github.io/images/farmStart.gif');
+    background-attachment: fixed;
+    background-size: cover;
 }
