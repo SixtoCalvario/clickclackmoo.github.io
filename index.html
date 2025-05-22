@@ -27,22 +27,19 @@
         <div id = "title">Happy Mrs Chicken</div>  
       </center>
 
-      <div id="eggsCollected">
+      <div id="score">
         Eggs Collected: <span id = "scoreValue">0</span>
       </div>
 
-      <div id = "daArena">
-        <div id = "eggContainer">
-        <div id = "egg">
-          <img src="https://25.media.tumblr.com/tumblr_lvwmhdE0lN1qg0dcvo1_500.gif">
-        </div>
+      <div id = "gameArea">
+        <div id = "target">
+          <img  id = "egg" src="https://25.media.tumblr.com/tumblr_lvwmhdE0lN1qg0dcvo1_500.gif">
         </div>
       </div>
 
       <script>
-        const target = document.getElementById('egg');
-        const scoreElement = document;
-        getElementById('scoreValue');
+        const target = document.getElementById('target');
+        const scoreElement = document.getElementById('scoreValue');
         let score = 0;
 
         function moveTarget() {
@@ -58,8 +55,14 @@
           score++;
           scoreElement.textContent = score;
           moveTarget();
+          playSound();
         });
-        
+
+        function playSound(){
+          let sound = new Audio();
+          sound.play();
+        }
+
         moveTarget(); // starting postition of the egg
       </script>
 

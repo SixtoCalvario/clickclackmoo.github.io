@@ -4,6 +4,7 @@ body{
     background-attachment: fixed;
     display: flex;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
     overflow: hidden;
@@ -13,37 +14,29 @@ body{
     font-size: xx-large
 }
 
-#daArena {
-    width: 500px;
-    height: 500px;
+#gameArea {
+    width: 600px;
+    height: 550px;
     background: rgb(74, 147, 216);
     border-radius: 10px;
     border: 2px solid;
     position: relative;
 }
 
-#eggContainer{
-    height: 60px;
-    width: 60px;
-}
-
-#eggContainer img{
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    display: block;
-}
-
-#egg {
-    width: 30px;
-    height: 30px;
+#target {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     position: absolute;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
-
-#eggsCollected {
-    font-size: 2rem;
+#egg {
+    width: 80px;
+    height: 80px;
+}
+#score {
+    font-size: 24px;
     margin: 10px 0;
-}
 
+}
