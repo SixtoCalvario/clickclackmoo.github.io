@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Click Clack Moo!</title>
+    <title>Happy Mrs. Chicken!</title>
     <link rel="stylesheet" href="C:\Users\sixty\OneDrive\Documents\GitHub\clickclackmoo.github.io\styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
@@ -20,10 +20,50 @@
     </script>
 
   </head>
+
   <body>
     <main>
-        <div id = "title">Click Clack Moo 2</div>  
+      <center>
+        <div id = "title">Happy Mrs Chicken</div>  
+      </center>
+
+      <div id="eggsCollected">
+        Eggs Collected: <span id = "scoreValue">0</span>
+      </div>
+
+      <div id = "daArena">
+        <div id = "eggContainer">
+        <div id = "egg">
+          <img src="https://25.media.tumblr.com/tumblr_lvwmhdE0lN1qg0dcvo1_500.gif">
+        </div>
+        </div>
+      </div>
+
+      <script>
+        const target = document.getElementById('egg');
+        const scoreElement = document;
+        getElementById('scoreValue');
+        let score = 0;
+
+        function moveTarget() {
+          const maxX = 470;
+          const maxY = 470;
+          const newX = Math.random()*maxX;
+          const newY = Math.random()*maxY;
+          target.style.left = newX + 'px';
+          target.style.top = newY +'px';
+        }
+
+        target.addEventListener('click', () => {
+          score++;
+          scoreElement.textContent = score;
+          moveTarget();
+        });
+        
+        moveTarget(); // starting postition of the egg
+      </script>
+
+
     </main>
-    <script src="index.js"></script>
   </body>
 </html>
