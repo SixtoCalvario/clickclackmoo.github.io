@@ -18,18 +18,20 @@
         }
       };
     </script>
-
+    <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/479081247&color=%235e93c4&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
   </head>
 
   <body>
     <main>
+
+
       <center>
         <div id = "title">Happy Mrs Chicken</div>  
-      </center>
 
       <div id="score">
         Eggs Collected: <span id = "scoreValue">0</span>
       </div>
+      </center>
 
       <div id = "gameArea">
         <div id = "target">
@@ -37,7 +39,9 @@
         </div>
       </div>
 
+
       <script>
+        // this section of the js moves around the egg when click and updates the score
         const target = document.getElementById('target');
         const scoreElement = document.getElementById('scoreValue');
         let score = 0;
@@ -55,15 +59,16 @@
           score++;
           scoreElement.textContent = score;
           moveTarget();
-          playSound();
-        });
 
-        function playSound(){
-          let sound = new Audio();
-          sound.play();
-        }
+          if(score==10) {
+          window.alert("huh what's that chest?");
+          }
+        });
+        
+        
 
         moveTarget(); // starting postition of the egg
+
       </script>
 
 

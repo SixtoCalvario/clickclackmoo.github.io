@@ -9,9 +9,15 @@ body{
     margin: 0;
     overflow: hidden;
 }
-
+iframe{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
 #title{
-    font-size: xx-large
+    font-size: xx-large;
+    width:"15%"; 
+    height:"125";
 }
 
 #gameArea {
