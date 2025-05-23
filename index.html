@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Happy Mrs. Chicken!</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://pngfre.com/wp-content/uploads/chicken-69.png" type="image/x-icon">
 
     <script>
@@ -19,6 +18,57 @@
       };
     </script>
     <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/479081247&color=%235e93c4&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+  
+    <style>
+      body{
+          background-image: url("https://cdna.artstation.com/p/assets/images/images/044/822/468/original/sofia-ritter-farm-cottage-with-chickens.gif?1641246286");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          height: 100vh;
+          margin: 0;
+          overflow: hidden;
+      }
+      iframe{
+          position: absolute;
+          left: 5%;
+          top: 5%;
+      }
+      #title{
+          font-size: 48px;
+          width:"15%"; 
+          height:"125";
+      }
+
+      #gameArea {
+          width: 600px;
+          height: 550px;
+          background: rgb(74, 147, 216);
+          border-radius: 10px;
+          border: 2px solid;
+          position: relative;
+      }
+
+      #target {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          position: absolute;
+          cursor: pointer;
+          transition: all 0.2s;
+      }
+      #egg {
+          width: 80px;
+          height: 80px;
+      }
+      #score {
+          font-size: 35px;
+          margin: 10px 0;
+      }
+
+    </style>
   </head>
 
   <body>
