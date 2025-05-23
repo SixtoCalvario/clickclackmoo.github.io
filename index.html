@@ -104,13 +104,14 @@
 
         // for audio 
         const audio = new Audio('select-sound-121244.mp3');
-
+        const bonusAudio = new Audio('game-bonus-144751.mp3');
         target.addEventListener('click', () => {
           score++;
           scoreElement.textContent = score;
           audio.play();
           moveTarget();
           if(score==20) {
+          bonusAudio.play();
           window.alert("You just got the easter egg this is your reward: https://sixtocalvario.github.io/tictactoe.github.io/");
           }
         });
