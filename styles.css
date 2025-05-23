@@ -15,7 +15,7 @@ iframe{
     top: 5%;
 }
 #title{
-    font-size: xx-large;
+    font-size: 48px;
     width:"15%"; 
     height:"125";
 }
@@ -42,7 +42,6 @@ iframe{
     height: 80px;
 }
 #score {
-    font-size: 24px;
+    font-size: 35px;
     margin: 10px 0;
-
 }
